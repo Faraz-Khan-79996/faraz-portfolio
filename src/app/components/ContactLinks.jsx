@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ContactLinks() {
   return (
-    <div className="flex justify-center gap-6">
+    <div className="flex justify-center gap-3 lg:gap-6">
       {/* LinkedIn */}
       <a
         href="https://www.linkedin.com/in/faraz-khan-b2a42028a/"
