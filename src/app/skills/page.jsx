@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { technologies } from "./technologiesArray";
 import Stats from "../components/Stats";
+import Image from "next/image";
 
 export default function ToolsAndTechnologies() {
     return (
@@ -48,7 +49,7 @@ export default function ToolsAndTechnologies() {
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
-                            <img
+                            <Image
                                 src={tech.src}
                                 alt={tech.name}
                                 className="w-20 h-20 mb-2"

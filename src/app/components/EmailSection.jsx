@@ -7,35 +7,41 @@ import Image from "next/image";
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false); // State to track loading
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true); // Start loading
+
         const data = {
             email: e.target.email.value,
             subject: e.target.subject.value,
             message: e.target.message.value,
         };
+
         const JSONdata = JSON.stringify(data);
         const endpoint = "/api/send";
 
-        // Form the request for sending data to the server.
         const options = {
-            // The method is POST because we are sending data.
             method: "POST",
-            // Tell the server we're sending JSON.
             headers: {
                 "Content-Type": "application/json",
             },
-            // Body of the request is the JSON data we created above.
             body: JSONdata,
         };
 
-        const response = await fetch(endpoint, options);
-        const resData = await response.json();
+        try {
+            const response = await fetch(endpoint, options);
+            const resData = await response.json();
 
-        if (response.status === 200) {
-            console.log("Message sent.");
-            setEmailSubmitted(true);
+            if (response.status === 200) {
+                console.log("Message sent.");
+                setEmailSubmitted(true);
+            }
+        } catch (error) {
+            console.error("Error sending email:", error);
+        } finally {
+            setLoading(false); // Stop loading
         }
     };
 
@@ -50,10 +56,9 @@ const EmailSection = () => {
                     Let&apos;s Connect
                 </h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
-                    {" "}
-                    I&apos;m currently looking for new opportunities, my inbox
-                    is always open. Whether you have a question or just want to
-                    say hi, I&apos;ll try my best to get back to you!
+                    I&apos;m currently looking for new opportunities, my inbox is always open. 
+                    Whether you have a question or just want to say hi, I&apos;ll try my best to 
+                    get back to you!
                 </p>
                 <div className="socials flex flex-row gap-2">
                     <a
@@ -129,9 +134,14 @@ const EmailSection = () => {
                         </div>
                         <button
                             type="submit"
-                            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                            disabled={loading} // Disable button when loading
+                            className={`font-medium py-2.5 px-5 rounded-lg w-full ${
+                                loading
+                                    ? "bg-gray-500 cursor-not-allowed text-white"
+                                    : "bg-primary-500 hover:bg-primary-600 text-white"
+                            }`}
                         >
-                            Send Message
+                            {loading ? "Sending..." : "Send Message"}
                         </button>
                     </form>
                 )}
