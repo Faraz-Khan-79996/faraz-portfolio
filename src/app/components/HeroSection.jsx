@@ -38,10 +38,10 @@ const HeroSection = () => {
             </div>
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-           Btech '26 | information technology | Pre-final year | Full Stack Developer | competitive programmer |
+           Btech &apos;26 | information technology | Pre-final year | Full Stack Developer | competitive programmer |
           </p>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          I’m Faraz Khan, a Full Stack Developer and DSA enthusiast. Currently interning at Ionots, I’ve previously contributed to impactful projects at Anajwala. I’m passionate about building scalable solutions and solving complex problems.
+          I&apos;m Faraz Khan, a Full Stack Developer and DSA enthusiast. Currently interning at Ionots, I&apos;ve previously contributed to impactful projects at Anajwala. I&apos;m passionate about building scalable solutions and solving complex problems.
           </p>          
           <div>
             <Link
