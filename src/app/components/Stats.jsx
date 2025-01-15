@@ -21,11 +21,11 @@ export default function Stats() {
   ];
 
   return (
-    <div className="py-10 dark:bg-gray-900 mb-16">
+    <div className="py-10bg-gray-900 mb-16">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <motion.h2
-          className="text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8"
+          className="text-3xl font-bold text-center text-gray-800 mb-8"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -57,7 +57,7 @@ export default function Stats() {
               key={index}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-purple-500/50 transition-shadow duration-300"
+              className="flex items-center gap-4bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-purple-500/50 transition-shadow duration-300"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
@@ -72,10 +72,10 @@ export default function Stats() {
 
               {/* Details */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                <h3 className="text-xl font-semibold text-gray-800">
                   {achievement.platform}
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-gray-400">
                   {achievement.description}
                 </p>
                 <p className="text-lg font-bold text-purple-600 mt-1">
