@@ -10,7 +10,7 @@ export default function ToolsAndTechnologies() {
             <div className="max-w-6xl mx-auto px-4">
                 {/* Header */}
                 <motion.h1
-                    className="text-3xl font-bold text-center mb-8"
+                    className="text-3xl font-bold text-center mb-8 text-gray-200"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -53,7 +53,7 @@ export default function ToolsAndTechnologies() {
                                 alt={tech.name}
                                 className="w-20 h-20 mb-2"
                             />
-                            <p className="text-sm font-medium">{tech.name}</p>
+                            <p className="text-sm font-medium text-gray-200">{tech.name}</p>
                         </motion.div>
                     ))}
                 </motion.div>
