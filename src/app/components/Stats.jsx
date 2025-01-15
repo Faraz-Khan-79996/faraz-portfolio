@@ -57,7 +57,7 @@ export default function Stats() {
               key={index}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-purple-500/50 transition-shadow duration-300"
+              className="flex items-center cursor-pointer gap-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-purple-500/50 transition-shadow duration-300"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },

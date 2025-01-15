@@ -8,7 +8,7 @@ import ContactLinks from "./ContactLinks";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16 md:my-40 my-16">
+    <section className="lg:py-16 my-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -24,7 +24,7 @@ const HeroSection = () => {
             <div className="flex h-20 md:h-auto">
             <TypeAnimation
               sequence={[
-                "Faraz",
+                "Faraz Khan",
                 1000,
                 "Web Developer",
                 1000,
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </p>          
           <div>
             <Link
-              href="/#contact"
+              href="/contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               Hire Me

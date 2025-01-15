@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Anajwala",
-    description: "groceries startup",
+    description: "Groceries startup",
     image: "/images/projects/p2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Faraz-Khan-79996/anaajwala-ecommerce",
@@ -34,8 +34,8 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Estaste Vista",
-    description: "Online Realestate listing platform",
+    title: "Estate Vista",
+    description: "Online Real-estate listing platform",
     image: "/images/projects/p4.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Faraz-Khan-79996/real-estate",
