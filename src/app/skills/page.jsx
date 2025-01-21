@@ -53,6 +53,8 @@ export default function ToolsAndTechnologies() {
                                 src={tech.src}
                                 alt={tech.name}
                                 className="w-20 h-20 mb-2"
+                                height={30}
+                                width={30}
                             />
                             <p className="text-sm font-medium text-gray-200">{tech.name}</p>
                         </motion.div>

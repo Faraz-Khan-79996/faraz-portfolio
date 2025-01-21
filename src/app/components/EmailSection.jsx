@@ -138,7 +138,7 @@ const EmailSection = () => {
                             className={`font-medium py-2.5 px-5 rounded-lg w-full ${
                                 loading
                                     ? "bg-gray-500 cursor-not-allowed text-white"
-                                    : "bg-primary-500 hover:bg-primary-600 text-white"
+                                    : "bg-primary hover:bg-violet-500 text-white"
                             }`}
                         >
                             {loading ? "Sending..." : "Send Message"}
