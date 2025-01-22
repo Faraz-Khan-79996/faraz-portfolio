@@ -4,7 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import ContactLinks from "./ContactLinks";
+
 const HeroSection = ({cvLink , intro , summary , typeAnimationContent}) => {
   return (
     <section className="lg:py-16 my-16">
