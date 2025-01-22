@@ -63,26 +63,25 @@ const Navbar = () => {
             </button>
           )} */}
 
-            
-<Sheet open={navbarOpen} onOpenChange={setNavbarOpen} >
-  <SheetTrigger>
-  <div
-  onClick={() => setNavbarOpen(() => true)}
-  className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white animate-blink shadow-lg hover:shadow-2xl transition-all"
->
-  <Bars3Icon className="h-5 w-5" />
-</div>
-
-
-  </SheetTrigger>
-  <SheetContent className="">
-    <SheetHeader>
-      <SheetTitle>Navigation</SheetTitle>
-      <MenuOverlay links={navLinks} setNavbarOpen={setNavbarOpen} />
-    </SheetHeader>
-  </SheetContent>
-</Sheet>
-
+                    <Sheet className="border-non" open={navbarOpen} onOpenChange={setNavbarOpen}>
+                        <SheetTrigger>
+                            <div
+                                onClick={() => setNavbarOpen(() => true)}
+                                className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white animate-blink shadow-lg hover:shadow-2xl transition-all"
+                            >
+                                <Bars3Icon className="h-5 w-5" />
+                            </div>
+                        </SheetTrigger>
+                        <SheetContent className="border-[#33353F]">
+                            <SheetHeader>
+                                <SheetTitle>Navigation</SheetTitle>
+                                <MenuOverlay
+                                    links={navLinks}
+                                    setNavbarOpen={setNavbarOpen}
+                                />
+                            </SheetHeader>
+                        </SheetContent>
+                    </Sheet>
                 </div>
                 <div className="menu hidden md:block md:w-auto" id="navbar">
                     <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
