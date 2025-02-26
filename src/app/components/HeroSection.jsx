@@ -33,7 +33,9 @@ const HeroSection = ({cvLink , intro , summary , typeAnimationContent}) => {
            {intro}
           </p>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          {summary}
+          I&apos;m Faraz Khan, a Full Stack Developer and DSA enthusiast. I have worked on multiple paid projects, delivering high-quality web applications with a focus on performance and scalability.
+<br /><br />
+With a strong problem-solving mindset, I enjoy tackling complex challenges and building efficient solutions. My experience spans developing full-stack applications, optimizing code, and ensuring seamless user experiences.
           </p>          
           <div>
           <Link

@@ -15,6 +15,15 @@ const projectsData = [
     previewUrl: "http://ec2-65-1-93-96.ap-south-1.compute.amazonaws.com:3000/",
   },
   {
+    id: 7,
+    title: "Motorexpresso",
+    description: "Paid web platform to manage RC information for a firm.",
+    image: "/images/projects/p0.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Faraz-Khan-79996",
+    previewUrl: "https://motorexpresso.com/",
+  },
+  {
     id: 2,
     title: "Anajwala",
     description: "Groceries startup",
